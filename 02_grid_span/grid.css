@@ -1,0 +1,19 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 100px 200px;
+    gap: 10px;
+}
+.grid-item{
+    background-color: blue;
+    font-size: 25px;
+    border: 5px solid cyan;
+}
+.grid-item:nth-child(5){
+    grid-column: span 2;
+    background-color: chartreuse;
+}
+.grid-item:nth-child(8){
+    grid-row: span 2;
+    background-color: chartreuse;
+}
